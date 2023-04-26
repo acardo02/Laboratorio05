@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieFragment"
+    tools:context=".ui.movie.MovieFragment"
     android:background="@color/backgroundLayout">
 
     <ImageView
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/big_gap"
         android:text="9.8"
-        android:textColor="@color/calification_color"
+        android:textColor="@color/qualification_color"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintStart_toEndOf="@+id/textView8"

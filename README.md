@@ -17,3 +17,19 @@ NavController, NavGraph, NavHost.
 
 Estructura organizada, Manejo automatico del back stack, Mejora de rendimiento .
 
+# Laboratorio 06
+## Preguntas
+
+### Pregunta 1
+### ¿En qué consiste el patrón de diseño Repository?
+
+Es un patrón de diseño que aísla la capa de datos del resto de la aplicación.
+
+
+### Pregunta 2
+### ¿Qué es el ViewModel?
+
+Es una lógica empresarial o un contenedor de estado a nivel de pantalla que expone el estado a la IU y
+encapsula la lógica empresarial relacionada.
+
+
