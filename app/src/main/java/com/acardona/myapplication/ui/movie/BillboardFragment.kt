@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import com.acardona.myapplication.R
+import com.acardona.myapplication.databinding.FragmentBillboardBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
@@ -15,29 +16,26 @@ class BillboardFragment : Fragment() {
     private lateinit var actionNavToCreateMovie: FloatingActionButton
     private lateinit var actionNavToMovie: CardView
 
+    private lateinit var binding: FragmentBillboardBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_billboard, container, false)
+        binding = FragmentBillboardBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        bind(view)
 
-        actionNavToCreateMovie.setOnClickListener {
+        binding.actionToCreateMovie.setOnClickListener {
             it.findNavController().navigate(R.id.action_billboardFragment_to_createMovieFragment)
         }
-        actionNavToMovie.setOnClickListener {
+        binding.movieCard.setOnClickListener {
             it.findNavController().navigate(R.id.action_billboardFragment_to_movieFragment)
         }
     }
 
-    private fun bind(view: View) {
-        actionNavToCreateMovie = view.findViewById(R.id.action_to_create_movie)
-        actionNavToMovie = view.findViewById(R.id.movie_card)
-    }
 }

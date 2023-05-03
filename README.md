@@ -33,3 +33,37 @@ Es una lógica empresarial o un contenedor de estado a nivel de pantalla que exp
 encapsula la lógica empresarial relacionada.
 
 
+# Laboratorio 07
+## Preguntas
+
+### Pregunta 1
+### ¿Qué ventajas tiene el utilizar LiveData?
+
+Garantiza que la IU coincida con el estado de los datos, sin fugas de memoria, datos siempre actualizados.
+
+### Pregunta 2
+### ¿Qué patrón de diseño utiliza LiveData?
+
+El patron observer.
+
+### Pregunta 3
+### Menciona que se debe agregar al Gradle para poder implementar DataBinding
+
+Habilitar el databinding con
+dataBinding {
+    enabled: true
+}
+
+### Pregunta 4
+### ¿Qué es DataBinding? Menciona sus ventajas frente a findViewById
+
+Es una función de Android que permite vincular los elementos de la interfaz de usuario (UI)
+de una aplicación directamente a los datos de la aplicación.
+
+ventajas: se ahorra lineas de codigo porque no necesitas declarar los views, los errores ocurren en tiempo de compilacion,
+si ocurre un error se sabe antes de ejecutar la app. 
+
+
+
+
+
