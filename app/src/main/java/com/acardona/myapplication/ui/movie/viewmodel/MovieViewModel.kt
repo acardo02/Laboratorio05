@@ -1,4 +1,4 @@
-package com.acardona.myapplication.ui.movie
+package com.acardona.myapplication.ui.movie.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -57,6 +57,14 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
     fun clearStatus() {
         status.value = BASE_STATE
     }
+
+    fun setSelectedMovie(movie: MovieModel) {
+        name.value = movie.name
+        description.value = movie.description
+        category.value = movie.category
+        qualification.value = movie.qualification
+    }
+
     companion object {
         val Factory = viewModelFactory {
             initializer {

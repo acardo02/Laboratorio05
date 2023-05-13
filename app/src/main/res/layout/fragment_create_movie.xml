@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.movie.CreateMovieFragment">
+    tools:context=".ui.movie.newmovie.CreateMovieFragment">
 
     <data>
         <variable
             name="viewmodel"
-            type="com.acardona.myapplication.ui.movie.MovieViewModel" />
+            type="com.acardona.myapplication.ui.movie.viewmodel.MovieViewModel" />
     </data>
 
     <FrameLayout

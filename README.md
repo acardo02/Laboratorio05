@@ -63,6 +63,24 @@ de una aplicación directamente a los datos de la aplicación.
 ventajas: se ahorra lineas de codigo porque no necesitas declarar los views, los errores ocurren en tiempo de compilacion,
 si ocurre un error se sabe antes de ejecutar la app. 
 
+# Laboratorio 08
+## Preguntas 
+
+### Pregunta 1
+### ¿Cuál es la principal ventaja de utilizar Recycler View?
+
+Su capacidad para manejar grandes conjuntos de datos de manera eficiente.
+
+### Pregunta 2
+### Menciona los componentes de RecyclerView y la función que tiene cada uno de ellos
+
+List Item: Este archivo de diseño define la estructura visual y los elementos de diseño de la
+vista de cada elemento, ya sea texto, imágenes, botones, etc
+
+ViewHolder: se utiliza para almacenar una referencia a la vista de cada elemento de la lista
+
+Adapter: se encarga de vincular los datos de una lista o de un conjunto de datos con las vistas que se muestran en pantalla
+
 
 
 

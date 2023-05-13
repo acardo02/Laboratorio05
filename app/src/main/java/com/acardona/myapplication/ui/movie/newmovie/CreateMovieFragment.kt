@@ -1,4 +1,4 @@
-package com.acardona.myapplication.ui.movie
+package com.acardona.myapplication.ui.movie.newmovie
 
 
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.acardona.myapplication.data.model.MovieModel
 import com.acardona.myapplication.databinding.FragmentCreateMovieBinding
+import com.acardona.myapplication.ui.movie.viewmodel.MovieViewModel
 
 class CreateMovieFragment : Fragment() {
 
